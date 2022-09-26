@@ -1,0 +1,158 @@
+body{
+    padding:0px;
+    margin:0px;
+    overflow: auto;
+    background-color: #eadbde;
+
+}
+header{
+    background-color: #b4b1b1;
+    margin-bottom: 0px;
+}
+
+.head{
+    background-color: #2e0d69;
+    /* display: flex; */
+    align-content: center;
+    margin-top: 0px;
+}
+
+.logo-top img{
+    padding: 15px 15px 3px;
+    width: 250px;
+    height: auto;
+}
+nav{
+    text-align: center;
+    position: sticky;
+    box-shadow: 0px 5px 4px -2px #2e0d69;
+    top: 0;
+    z-index: 150;
+}
+nav ul li{
+    color: white;
+    display: inline-block;
+    /* font-size: 20px; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+    background-color: #2e0d69;
+    /* margin-left: 0%; */
+    padding: 10px 0px;
+    
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    width: inherit;
+    margin-top: 8px;
+}
+nav ul li ul li{
+    display: block;
+    width: 100%;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+.sosmed{
+    width:45px;
+    height: auto;
+}
+.event img{
+    width: 70%;
+    height: auto;
+}
+table{
+    table-layout: auto;
+}
+.social{
+    background-color: #eadbde;
+}
+.foot{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e0d69;
+    padding-left: 10px;
+
+}
+
+.cont{
+    font-size: 200%;
+    padding-right: 100px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+}
+
+footer{
+    margin-top: 0px;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 900px){
+    nav ul li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0px;
+    }
+    nav ul li ul{
+        display: none;
+        position: relative;
+        width: inherit;
+        margin-top: 8px;
+    }
+    
+}
+.foot table{
+    width: 80%;
+}
+.footCont {
+    font-size: 80%;
+}
+
+.content .top{
+    padding-top: 75px;
+    font-size: 50px;
+    color: #2e0d69;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.content{
+    padding: 0px 10px;
+    margin-top: -50px;
+    /* position: absolute; */
+    background: url(./images/ba.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+
+}
+
+.fill{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e0d69;
+    
+}
+form input, textarea, select{
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e0d69;
+    font-weight: bold;
+}
+.foot p {
+    font-size: 50%;
+}
+.ad img{
+    padding-top: 10px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}

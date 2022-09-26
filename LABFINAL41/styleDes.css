@@ -1,0 +1,162 @@
+body{
+    padding:0px;
+    margin:0px;
+    overflow: auto;
+    background-color: #eadbde;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#buddy{
+    color: #2e0d69;
+}
+#buddy p{
+    font-size: 40px;
+}
+#buddy h1{
+    font-size: 60px;
+}
+header{
+    text-align: left;
+    background-color: #b4b1b1;
+    margin-bottom: 0px;
+}
+
+.head{
+    background-color: #2e0d69;
+    /* display: flex; */
+    align-content: center;
+    margin-top: 0px;
+}
+
+.logo-top img{
+    padding: 15px 15px 3px;
+    width: 250px;
+    height: auto;
+}
+nav{
+    text-align: center;
+    position: sticky;
+    box-shadow: 0px 5px 4px -2px #2e0d69;
+    top: 0;
+    z-index: 150;
+}
+nav ul li{
+    color: white;
+    display: inline-block;
+    /* font-size: 20px; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+    background-color: #2e0d69;
+    /* margin-left: 0%; */
+    padding: 10px 0px;
+    
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    width: inherit;
+    margin-top: 8px;
+}
+nav ul li ul li{
+    display: block;
+    width: 100%;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+.sosmed{
+    width:45px;
+    height: auto;
+}
+.event img{
+    width: 70%;
+    height: auto;
+}
+table{
+    table-layout: auto;
+}
+.social{
+    background-color: #eadbde;
+}
+.foot{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e0d69;
+    padding-left: 10px;
+
+}
+
+.cont{
+    font-size: 170%;
+    padding-right: 100px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+}
+
+footer{
+    margin-top: 0px;
+    text-align: left;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 800px){
+    nav ul li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0px;
+    }
+    nav ul li ul{
+        display: none;
+        position: relative;
+        width: inherit;
+        margin-top: 8px;
+    }
+    
+}
+#cakes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #eadbde;
+    padding: 60px 0px;
+    font-size: 30px;
+}
+
+.cake1 p{
+    text-align: center;
+}
+#ic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #eadbde;
+    padding: 60px 0px;
+    font-size: 30px;
+}
+
+.ic1 p{
+    text-align: center;
+    font-size: 30px;
+}
+.foot p {
+    font-size: 50%;
+}
+.ad img{
+    width: 100%;
+}

@@ -1,0 +1,215 @@
+.lala{
+    padding:0px;
+    margin:0px;
+    overflow: auto;
+    background-color: #eadbde;
+    background-image: url(./images/Cofe.png);
+    background-size: 100%;
+    
+
+}
+header{
+    background-color: #b4b1b1;
+    margin-bottom: 0px;
+}
+
+.head{
+    background-color: #2e0d69;
+    /* display: flex; */
+    align-content: center;
+    margin-top: 0px;
+}
+
+.logo-top img{
+    padding: 15px 15px 3px;
+    width: 250px;
+    height: auto;
+}
+nav{
+    text-align: center;
+    position: sticky;
+    box-shadow: 0px 5px 4px -2px #2e0d69;
+    top: 0;
+    z-index: 150;
+}
+nav ul li{
+    color: white;
+    display: inline-block;
+    /* font-size: 20px; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+    background-color: #2e0d69;
+    /* margin-left: 0%; */
+    padding: 10px 0px;
+    
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    width: inherit;
+    margin-top: 8px;
+}
+nav ul li ul li{
+    display: block;
+    width: 100%;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+.sosmed{
+    width:45px;
+    height: auto;
+}
+.event img{
+    width: 70%;
+    height: auto;
+}
+table{
+    table-layout: auto;
+}
+.social{
+    background-color: #eadbde;
+}
+.foot{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e0d69;
+    padding-left: 10px;
+
+}
+
+.cont{
+    font-size: 200%;
+    padding-right: 100px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+}
+
+footer{
+    margin-top: 0px;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 900px){
+    nav ul li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0px;
+    }
+    nav ul li ul{
+        display: none;
+        position: relative;
+        width: inherit;
+        margin-top: 8px;
+    }
+    
+}
+
+.container{
+    width: 55%;
+    margin:  0px auto;
+    overflow: auto;
+}
+
+.slider-inner{
+    width: 90%;
+    /* height: 300px; */
+    position: relative;
+    overflow: hidden;
+    /* float: left; */
+    /* padding: 3px; */
+    border: #666 solid 1px;
+}
+
+.slider-inner img{
+    display: none;
+    width: 100%;
+    /* height: 300px; */
+}
+
+.slider-inner img.active{
+    display: inline-block;
+}
+
+.prev,.next{
+    /* float: left; 
+     margin-top: 280px; */
+    cursor: pointer;
+}
+
+.prev{
+    /* position: relative;
+    margin-right: -45px; */
+    z-index: 100;
+}
+
+.next{
+    /* position: relative;
+    margin-left: -60px; */
+    z-index: 100;
+}
+
+/* .table{
+    table-layout: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eadbde;
+} */
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    /* background-color: aliceblue; */
+    padding-bottom: 50px;
+}
+#slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #eadbde;
+    padding: 60px 0px;
+}
+.subtitleMenu h1{
+    font-size: 510%;
+    padding: 0px;
+    text-align: center;
+    /* background-color:aliceblue; */
+}
+.menu1 img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+#content2{
+    /* background-color: aliceblue; */
+    text-align: center;
+}
+
+.bodyIn{
+    background-color: aliceblue;
+    margin-top: 0px;
+}
+.foot table{
+    width: 80%;
+}
+.foot p {
+    font-size: 50%;
+}

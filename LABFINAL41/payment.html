@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order & Payment</title>
+    <link rel="stylesheet" href="styleOR.css">
+    <script defer src="scriptOR.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-top">
+            <img src="./images/LOGO1.png" alt="">
+        </div>
+        <div class="head">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="link">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        MENU
+                        <ul>
+                            <li>
+                                <a href="beverage.html" class="link">
+                                    Beverages
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dessert.html" class="link">
+                                    Desserts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        ORDER & PAY
+                        <ul>
+                            <li>
+                                <a href="payment.html" class="link">
+                                    Order & Pay Online
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        ABOUT US
+                        <ul>
+                            <li>
+                                <a href="coffeepedia.html" class="link">
+                                    Coffeepedia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="teapedia.html" class="link">
+                                    Teapedia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contactus.html" class="link">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        
+        <p class="top">Order & Online Payment</p>
+        <div>
+            <form action="" onsubmit="validation(event)" name="orderForm">
+                <div>
+                
+                    <div class="fill">
+                        <label for="name">Name
+                            <p class="error" id="name-error"></p>
+                        </label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="fill">
+                        <label for="email">Email
+                            <p class="error" id="email-error"></p>
+                        </label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="fill">
+                        <label for="addr">Address
+                            <p class="error" id="add-error"></p>
+                        </label>
+                        <textarea name="add" id="add" rows="5"></textarea>
+                    </div>
+                    <div class="fill">
+                        <label for="city">City
+                            <p class="error" id="city-error"></p>
+                        </label>
+                        <select name="city" id="city">
+                            <option value="1">------CITY------</option>
+                            <option value="2">Jember</option>
+                            <option value="3">Surabaya</option>
+                            <option value="4">Banyuwangi</option>
+                            <option value="5">Malang</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="pay">Payment method
+                            <p class="error" id="pay-error"></p>
+                        </label>
+                        <select name="pay" id="pay">
+                            <option value="none">------Payment Method------</option>
+                            <option value="visa">Visa</option>
+                            <option value="paypal">Pay Pal</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="valid"> Card Validity
+                            <p class="error" id="valid-error"></p>
+                        </label>
+                        <input type="date" name="valid" id="valid">
+                    </div>
+                    <div class="fill">
+                        <label for="cvv">CVV
+                            <p class="error" id="error-cvv"></p>
+                        </label>
+                        <input type="text" name="cvv" id="cvv">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="formSub">
+                        <p>Coffee</p>
+                    </div>
+                    <div class="fill">
+                        <label for="black">Black Coffee
+                            <p class="error" id="black-error"></p>
+                        </label>
+                        <select name="black" id="black">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div>
+                    <div class="fill">
+                        <label for="cap">Cappucino
+                            <p class="error" id="cap-error"></p>
+                        </label>
+                        <select name="cap" id="cap">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="latte">Latte
+                            <p class="error" id="latte-error"></p>
+                        </label>
+                        <select name="latte" id="latte">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="formSub">
+                        <p>Tea</p>
+                    </div>
+                    <div class="fill">
+                        <label for="bt">Black Tea
+                            <p class="error" id="bt-error"></p>
+                        </label>
+                        <select name="bt" id="bt">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="gt">Green Tea
+                            <p class="error" id="gt-error"></p>
+                        </label>
+                        <select name="gt" id="gt">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="pt">Pulled Tea
+                            <p class="error" id="pull-error"></p>
+                        </label>
+                        <select name="pull" id="pull">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="formSub">
+                        <p>Cake</p>
+                    </div>
+                    <div class="fill">
+                        <label for="dcc">Dark Chocolate Cake
+                            <p class="error" id="dcc-error"></p>
+                        </label>
+                        <select name="dcc" id="dcc">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="rvc">Red Velvet Cake
+                            <p class="error" id="rvc-error"></p>
+                        </label>
+                        <select name="rvc" id="rvc">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="mc">Matcha Cake
+                            <p class="error" id="mc-error"></p>
+                        </label>
+                        <select name="mc" id="mc">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="vc">Vanilla Cake
+                            <p class="error" id="vc-error"></p>
+                        </label>
+                        <select name="vc" id="vc">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="formSub">
+                        <p>Ice Cream</p>
+                    </div>
+                    <div class="fill">
+                        <label for="cic">Chocolate Ice Cream
+                            <p class="error" id="cic-error"></p>
+                        </label>
+                        <select name="cic" id="cic">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="lic">Lavender Ice Cream
+                            <p class="error" id="lic-error"></p>
+                        </label>
+                        <select name="lic" id="lic">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="mic">Matcha Ice Cream
+                            <p class="error" id="mic-error"></p>
+                        </label>
+                        <select name="mic" id="mic">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="vic">Vanilla Ice Cream
+                            <p class="error" id="vic-error"></p>
+                        </label>
+                        <select name="vic" id="vic">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="fill">
+                        <label for="tc">Terms and Condition
+                            <p class="error" id="tc-error"></p>
+                        </label>
+                        <select name="tc" id="tc">
+                            <option value="0">---Choose Agreement---</option>
+                            <option value="1">Agree</option>
+                            <option value="2">Disagree</option>
+                        </select>
+                    </div>
+
+                    
+                    <div>
+                        <input type="submit" value="submit">
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    
+        
+    </div>
+
+    <div class="ad">
+        <img src="./images/FREE DELIVERY Order.png" alt="">
+    </div>
+    
+    <footer>
+        <div class="social">
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://www.instagram.com/">
+                            <img src="./images/IGLOGO.png" alt="" class="sosmed">
+                        </a>
+                        
+                    </td>
+                    <td>
+                        <a href="https://www.facebook.com/">
+                            <img src="./images/FB.png" alt="" class="sosmed">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://twitter.com/">
+                            <img src="./images/TWITTER.png" alt="" class="sosmed">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="foot">
+            <table>
+                <tr>
+                    <td class="cont">
+                    <b>Contact Us</b>
+                        <p class="footCont">Telp: +62123456978</p>
+                        <p class="footCont">Address: Binusian Street No.96, RT. 20, RW.4, Kemanggaan, Jember Utara</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cont"> 
+                        <b>About Us</b>
+                        <p class="footCont">We are a bunch of baristas with passion for coffee bringing you the taste of coffees from all around Indonesia to the northern part of Jember</p>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
